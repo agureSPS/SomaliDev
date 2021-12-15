@@ -10,20 +10,25 @@ const GridWrapper = styled.div`
   grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: minmax(25px, auto);
 `; 
-export const Questions = ({ apiData, fileName }) => {
-  const fileType =
-    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=UTF-8";
-  const fileExtension = ".xlsx";
+export const Questions = () => (
+  <GridWrapper>
+  <html> 
 
-  const exportToCSV = (apiData, fileName) => {
-    const ws = XLSX.utils.json_to_sheet(apiData);
-    const wb = { Sheets: { data: ws }, SheetNames: ["data"] };
-    const excelBuffer = XLSX.write(wb, { bookType: "xlsx", type: "array" });
-    const data = new Blob([excelBuffer], { type: fileType });
-    FileSaver.saveAs(data, fileName + fileExtension);
-  };
+<h2>Interview Questions</h2>
 
-  return (
-    <button onClick={(e) => exportToCSV(apiData, fileName)}>Export</button>
-  );
-};
+<table>
+  <tr>
+    <td>Questions</td>
+    <td>Answers</td>
+    
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>14</td>
+    <td>10</td>
+  </tr>
+</table>
+</html> 
+
+    </GridWrapper>
+  )
