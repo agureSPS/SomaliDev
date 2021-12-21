@@ -1,22 +1,33 @@
 import React from 'react';
 import styled from 'styled-components';
 const GridWrapper = styled.div`
-  display: grid;
-  grid-gap: 10px;
-  margin-top: 1em;
-  margin-left: 6em;
-  margin-right: 6em;
-  grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: minmax(25px, auto);
+  margin-top: 200px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 580px;
+  div {
+    margin-left: -30px;
+    margin-top: 300px;
+  }
+
 `;
 export const Home = (props) => (
     <GridWrapper>
+     <img src="C:\git\SomaliDev\react-somdev\src\images\react.png" alt="randomImg" width="500" height="600"></img>
+       
        <form>
             <label>
                 Write Something:
-                <input type="textarea" name="blog" />
+                <input type="textarea" name="blog" rows="40" cols="50" />
             </label>
             <input type="submit" value="Post" />
         </form>
+
+       <div>
+        <h3>Newest Blogs</h3>
+          <p>This is a blog.</p>
+          <p>This is a blog.</p>
+       </div>
+
     </GridWrapper>
   )
