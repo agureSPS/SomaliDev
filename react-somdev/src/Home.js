@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import  react from  './images/react.png';
 const GridWrapper = styled.div`
   margin-top: 200px;
   margin-bottom: 100px;
@@ -13,7 +14,7 @@ const GridWrapper = styled.div`
 `;
 export const Home = (props) => (
     <GridWrapper>
-     <img src="C:\git\SomaliDev\react-somdev\src\images\react.png" alt="randomImg" width="500" height="600"></img>
+     <img src= {react} alt="randomImg" width="500" height="600"></img>
        
        <form>
             <label>
