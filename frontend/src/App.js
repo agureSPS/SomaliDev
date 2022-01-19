@@ -7,6 +7,7 @@ import {
   Switch
 } from "react-router-dom";
 import { NavigationBar } from './components/NavigationBar';
+import { LeftSide } from './LeftSide';
 import { Home } from './Home';
 import { Questions } from './Questions';
 import { Resource } from './Resource';
@@ -21,6 +22,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/questions" component={Questions} />
         <Route path="/resource" component={Resource} />
+        <Route path="/leftside" component={LeftSide} />
       </Switch>
     </Router>
   </React.Fragment>
