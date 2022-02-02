@@ -9,7 +9,10 @@ Step 3: npm start.
 
 
 Running python code.
-Cd into python file. (cd api)
-Activate environment (venv\Scripts\activate) for windows only.
-Set your App. ($env:FLASK_APP = "api.py")
-Run your python file. (flask run)
+1.Cd into python file. (cd api)
+
+2.Activate environment (venv\Scripts\activate) for windows only.
+
+3.Set your App. ($env:FLASK_APP = "api.py")
+
+4.Run your python file. (flask run)
