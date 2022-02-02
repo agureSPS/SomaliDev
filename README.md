@@ -9,6 +9,7 @@ Step 3: npm start.
 
 
 Running python code.
+
 1.Cd into python file. (cd api)
 
 2.Activate environment (venv\Scripts\activate) for windows only.
