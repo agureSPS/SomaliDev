@@ -1,6 +1,6 @@
 # SomaliDev
 
-Running React code.
+# Running React code.
 
 Step 1: change directory cd frontend. 
 
