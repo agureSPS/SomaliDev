@@ -8,7 +8,7 @@ Step 2: npm install { you only have to run this the first time}
 
 Step 3: npm start.
 
-Running python code.
+# Running python code.
 
 Open second terminal-
 
