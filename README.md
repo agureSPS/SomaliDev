@@ -14,7 +14,7 @@ Open second terminal-
 
 1.Cd into python file. (cd api)
 
-2.Activate environment (venv\Scripts\activate) for windows only.
+2.Activate environment (venv\Scripts\activate or .\env\Scripts\activate) for windows only.
 
 3.Set your App. ($env:FLASK_APP = "api.py")
 
